@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonalitats Challenge Musical</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>🎵 Armadura </h1>
+        
+        <div id="status-bars">
+            <div id="score-area" class="status-box">
+                <h3>Puntuació:</h3> 
+                <span id="score">0</span>
+            </div>
+            <div id="errors-area" class="status-box">
+                <h3>Errors:</h3> 
+                <span id="errors-count">0</span>
+            </div>
+        </div>
+        
+        <div id="quiz-area">
+            
+            <div id="armadura-display">
+                <h2 id="question-type"></h2> 
+                
+                <div id="pentagrama-container">
+                    <img id="armadura-img" src="" alt="Armadura Musical">
+                </div>
+            </div>
+            
+            <div id="options-container">
+                <button class="option-btn" data-key="0">Opció 1</button>
+                <button class="option-btn" data-key="1">Opció 2</button>
+                <button class="option-btn" data-key="2">Opció 3</button>
+                <button class="option-btn" data-key="3">Opció 4</button>
+            </div>
+            
+            <p id="feedback"></p>
+        </div>
+
+        <button id="start-btn">Comença el Repte!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

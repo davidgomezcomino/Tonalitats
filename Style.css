@@ -1,0 +1,179 @@
+/* Utilitzem una font moderna */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f4287 0%, #0077b6 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#game-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 650px;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    color: #fca311;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+/* Nou Estil per als Comptadors (Puntuació i Errors) */
+#status-bars {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.status-box {
+    flex: 1;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#score-area {
+    background-color: #6a994e; /* Verd per la puntuació */
+    color: white;
+}
+
+#errors-area {
+    background-color: #e56b6f; /* Vermell per als errors */
+    color: white;
+}
+
+.status-box h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.status-box span {
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+}
+
+
+/* Display de l'Armadura */
+#armadura-display {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #a8dadc;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question-type {
+    font-size: 1.6em;
+    color: #1d3557;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#pentagrama-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px; /* Ajustem l'alçada mínima del contenidor */
+}
+
+/* AJUST DE MIDA DE LA IMATGE CLAU */
+#armadura-img {
+    max-height: 200px; /* AUGMENTAT a 200px per ser el doble */
+    width: auto; 
+    display: block;
+}
+/* FI AJUST DE MIDA */
+
+
+/* Opcions de Resposta */
+#options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.option-btn {
+    padding: 15px 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid #457b9d;
+    border-radius: 10px;
+    background-color: #f1faee;
+    color: #1d3557;
+    transition: all 0.2s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: #457b9d;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Colors de Feedback */
+.correct {
+    background-color: #6a994e !important;
+    color: white !important;
+    border-color: #386641 !important;
+    transform: scale(1.05);
+}
+
+.incorrect {
+    background-color: #e56b6f !important;
+    color: white !important;
+    border-color: #b70909 !important;
+}
+
+#feedback {
+    min-height: 30px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #1d3557;
+}
+
+#start-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1.4em;
+    font-weight: 700;
+    background-color: #fca311;
+    color: #1d3557;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#start-btn:hover {
+    background-color: #ffb700;
+    transform: scale(1.05);
+}
